@@ -1,0 +1,10 @@
+class Solution:
+    def isPalindrome(x: int) -> bool:
+        palindrome = [*str(x)]
+        palindrome_check = palindrome[::-1]
+        for i in range(len(palindrome)):
+            if palindrome[0] == palindrome[-1 - i]:  # 1 == 1, 2 ==2,
+                if i == len(palindrome) - 1:
+                    return True
+
+    print(isPalindrome(121))

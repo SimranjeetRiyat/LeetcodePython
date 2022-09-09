@@ -1,6 +1,4 @@
 def addTwoNumbers(l1, l2):
-    if l1 == []:
-        l1 = [0]
     l3 = []
     l4 = []
     output = []
@@ -16,4 +14,4 @@ def addTwoNumbers(l1, l2):
     return output
 
 
-print(addTwoNumbers([905], [1032]))
+print(addTwoNumbers([], []))

@@ -11,7 +11,7 @@ def lengthOfLongestSubstring(s):
             if sequence[i] not in answer:
                 answer.append(sequence[i])
             else:
-                for j in answer:
+                for j in range(len(answer)):
                     j = answer.index(sequence[i])
                 del answer[: j + 1]
                 answer.append(sequence[i])
